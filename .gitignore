@@ -1,0 +1,16 @@
+.vs/
+out/
+build/
+x64/
+x86/
+CMakeSettings.json
+CMakeUserPresets.json
+
+*.exe
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.dll
+
+.cache/
