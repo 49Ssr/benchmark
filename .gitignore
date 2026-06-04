@@ -5,6 +5,7 @@ x64/
 x86/
 CMakeSettings.json
 CMakeUserPresets.json
+CMakePresets.json
 
 *.exe
 *.pdb
