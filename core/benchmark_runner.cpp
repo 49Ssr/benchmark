@@ -10,11 +10,17 @@ void betweenSeparators(const std::string& text) {
 	std::cout << "\n"; for (int i = 0; i < 50; i++) std::cout << "-"; std::cout << "\n";
 }
 
-void BenchmarkRunner::runBenchmark(Benchmark& benchmark) {
+BenchmarkResult BenchmarkRunner::runBenchmark(Benchmark& benchmark) { //returns BenchmarkResult struct
 	Timer timer;
 	timer.start();
 	benchmark.run();
 	timer.stop();
 
-	std::cout << "Elapsed:\t" << timer.getMilliseconds() << " ms\n";
+	BenchmarkResult result;	//create struct object
+	result.name = benchmark.getName();
+	result.elapsedMs = timer.getMilliseconds();
+
+	return result;
+
+	//std::cout << "Elapsed:\t" << timer.getMilliseconds() << " ms\n";
 }

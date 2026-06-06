@@ -48,3 +48,7 @@ void SimulationBenchmark::run() {
 		}
 	}
 }
+
+std::string SimulationBenchmark::getName() const {
+	return "Simulation Benchmark";
+}

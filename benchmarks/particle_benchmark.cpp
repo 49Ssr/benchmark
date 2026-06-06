@@ -7,3 +7,7 @@ void ParticleBenchmark::run() {
 		sum += i;
 	}
 }
+
+std::string ParticleBenchmark::getName() const {
+	return "Particle Benchmark";
+}
