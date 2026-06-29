@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <vector>
 
 //has common class used by all types of benchmarks, with their own run()
 

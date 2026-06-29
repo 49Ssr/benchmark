@@ -2,6 +2,7 @@
 #include "../core/benchmark_runner.h"
 #include "../benchmarks/particle_benchmark.h"
 #include "../benchmarks/simulation_benchmark.h"
+#include "../benchmarks/simulation_benchmark_mt.h"
 
 int main() {
 	BenchmarkRunner runner;
@@ -21,6 +22,14 @@ int main() {
 	for (int i = 0; i < 25; i++) {
 		result2 = runner.runBenchmark(benchmark2);
 		std::cout << "\n" << result2.name << "\tElapsed:" << result2.elapsedMs << " ms\n";
+	}
+
+	SimulationBenchmarkMT benchmark3;
+	betweenSeparators(benchmark3.getName());
+	BenchmarkResult result3;
+	for (int i = 0; i < 25; i++) {
+		result3 = runner.runBenchmark(benchmark3);
+		std::cout << "\n" << result3.name << "\tElapsed:" << result3.elapsedMs << " ms\n";
 	}
 
 	return 0;
