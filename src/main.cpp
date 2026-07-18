@@ -8,9 +8,13 @@ int main() {
 	BenchmarkRunner runner;
 	std::cout << "\nInitialized.\n";
 
-	runBenchmarkSet(runner,particleBenchmark,25);
-	runBenchmarkSet(runner,SimulationBenchmark,25);
-	runBenchmarkSet(runner, SimulationBenchmarkMT, 25);
+	ParticleBenchmark particleBenchmark;
+	SimulationBenchmark simulationBenchmark;
+	SimulationBenchmarkMT simulationBenchmarkMT;
+
+	runBenchmarkSet(runner, particleBenchmark, 25);
+	runBenchmarkSet(runner, simulationBenchmark, 25);
+	runBenchmarkSet(runner, simulationBenchmarkMT, 25);
 
 	/* LEGACY BENCHMARK CODE
 	ParticleBenchmark benchmark1;
