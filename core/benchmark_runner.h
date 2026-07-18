@@ -9,3 +9,5 @@ public:
 	BenchmarkResult runBenchmark(Benchmark& benchmark);
 	//WORK IN PROGRESS IN THE CPP FILE
 };
+
+void runBenchmarkSet(BenchmarkRunner& runner, Benchmark& benchmark, int runs);
