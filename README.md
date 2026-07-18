@@ -17,6 +17,8 @@ Experimental CPU benchmarking framework written in C++.
 The project research is stored alongside the code so design decisions can be traced back to evidence rather than chat history.
 
 - [001 - What Makes a CPU Benchmark Trustworthy?](research/001_trustworthy_cpu_benchmarking.md)
+- [002 - Hardware-Aware Benchmark Paths](research/002_hardware_aware_benchmark_paths.md)
+- [003 - Result Storage Pipeline](research/003_result_storage_pipeline.md)
 
 ## Work in Progress
 
@@ -26,9 +28,10 @@ The project research is stored alongside the code so design decisions can be tra
 
 ## Planned Features
 
-- Hardware detection
+- Hardware detection and ISA-aware module dispatch
 - Expanded multi-thread benchmarking
-- Database integration
+- CSV export and later SQLite/database integration
+- Future GPU benchmarking research
 
 ## Status
 
