@@ -1,36 +1,27 @@
-PROTOTYPE Benchmark V1
-
-
+# PROTOTYPE Benchmark V1
 
 Experimental CPU benchmarking framework written in C++.
 
+## Current Features
 
+- High-resolution timing
+- Benchmark abstraction layer
+- Particle simulation workload (very abstracted concept, useful nonetheless)
+- Physics-inspired simulation workload (very abstracted concept, useful nonetheless)
+- Single-threaded and two-thread simulation tests
+- Benchmark result structure
 
-Current Features:
+## Work in Progress
 
-\- High resolution timing
+- Result statistics and summary output
+- Cleaner benchmark set execution
 
-\- Benchmark abstraction layer
+## Planned Features
 
-\- Particle simulation workload (very abstracted concept, useful nonetheless)
+- Hardware detection
+- Expanded multi-thread benchmarking
+- Database integration
 
-\- Physics-inspired simulation workload (very abstracted concept, useful nonetheless)
+## Status
 
-
-
-Planned Features:
-
-\- Multi-thread benchmarks
-
-\- Hardware detection
-
-\- Result statistics
-
-\- Database integration
-
-
-
-Status:
-
-Work in Progress (VERY EARLY STAGE)
-
+**Work in Progress — very early stage**
