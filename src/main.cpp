@@ -8,6 +8,11 @@ int main() {
 	BenchmarkRunner runner;
 	std::cout << "\nInitialized.\n";
 
+	runBenchmarkSet(runner,particleBenchmark,25);
+	runBenchmarkSet(runner,SimulationBenchmark,25);
+	runBenchmarkSet(runner, SimulationBenchmarkMT, 25);
+
+	/* LEGACY BENCHMARK CODE
 	ParticleBenchmark benchmark1;
 	betweenSeparators(benchmark1.getName());
 	BenchmarkResult result1;
@@ -31,6 +36,7 @@ int main() {
 		result3 = runner.runBenchmark(benchmark3);
 		std::cout << "\n" << result3.name << "\tElapsed:" << result3.elapsedMs << " ms\n";
 	}
+	*/
 
 	return 0;
 }
