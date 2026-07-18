@@ -20,6 +20,7 @@ The project research is stored alongside the code so design decisions can be tra
 - [002 - Hardware-Aware Benchmark Paths](research/002_hardware_aware_benchmark_paths.md)
 - [003 - Result Storage Pipeline](research/003_result_storage_pipeline.md)
 - [004 - Research Review and Coding Adjustment Plan](research/004_research_review_and_coding_plan.md)
+- [005 - Lifecycle and Validation Plan Cross-Check](research/005_lifecycle_validation_crosscheck.md)
 
 ## Work in Progress
 
