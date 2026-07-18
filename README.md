@@ -19,6 +19,7 @@ The project research is stored alongside the code so design decisions can be tra
 - [001 - What Makes a CPU Benchmark Trustworthy?](research/001_trustworthy_cpu_benchmarking.md)
 - [002 - Hardware-Aware Benchmark Paths](research/002_hardware_aware_benchmark_paths.md)
 - [003 - Result Storage Pipeline](research/003_result_storage_pipeline.md)
+- [004 - Research Review and Coding Adjustment Plan](research/004_research_review_and_coding_plan.md)
 
 ## Work in Progress
 
