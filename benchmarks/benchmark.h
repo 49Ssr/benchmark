@@ -1,13 +1,14 @@
 #pragma once
+#include "../core/validation_result.h"
 #include <string>
-#include <vector>
-#include <limits>
 
 //has common class used by all types of benchmarks, with their own run()
 
 class Benchmark {
 public:
 	virtual ~Benchmark() = default; //virtual means derived class can have own implementation
+	virtual void prepareRun();
+	virtual ValidationResult validate(); //returns ValidationResult struct
 	virtual void run() = 0; //0 - function must be implemented by derived classes
 	virtual std::string getName() const = 0;
 

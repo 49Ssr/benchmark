@@ -12,4 +12,4 @@ add_executable(benchmark
 
     benchmarks/particle_benchmark.cpp
     benchmarks/simulation_benchmark.cpp
-)
+ "core/validation_result.h")
